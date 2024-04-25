@@ -1,0 +1,13 @@
+#include <string.h>
+  
+struct foo_header {
+  int len;
+  int val;
+};
+
+char *buf = char[256];
+
+void func() {
+  foo_header *pHeader = nullptr;
+  pHeader = (foo_header *)buf;
+}
